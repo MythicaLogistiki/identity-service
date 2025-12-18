@@ -29,6 +29,18 @@ MOCK_USERS = {
         "tenant_id": "550e8400-e29b-41d4-a716-446655440000",
         "role": Role.STANDARD,
     },
+    # Platform admin - internal Numbersence staff
+    "platform@numbersence.com": {
+        "password": "platform123",
+        "tenant_id": "00000000-0000-0000-0000-000000000000",  # Platform tenant
+        "role": Role.PLATFORM_ADMIN,
+    },
+    # Support agent - customer support staff
+    "support@numbersence.com": {
+        "password": "support123",
+        "tenant_id": "00000000-0000-0000-0000-000000000000",  # Platform tenant
+        "role": Role.SUPPORT_AGENT,
+    },
 }
 
 app = FastAPI(

@@ -6,8 +6,10 @@ from pydantic import BaseModel, EmailStr, Field
 
 
 class Role(str, Enum):
-    ADMIN = "admin"
     STANDARD = "standard"
+    ADMIN = "admin"
+    PLATFORM_ADMIN = "platform_admin"
+    SUPPORT_AGENT = "support_agent"
 
 
 class TokenRequest(BaseModel):
